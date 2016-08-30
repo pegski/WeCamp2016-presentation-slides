@@ -1,0 +1,37 @@
+# query MyPeg($pegShortcode: String!) {
+#   peg(shortcode: $pegShortcode) {
+#     shortcode
+#     pegEvents {
+#       description
+#       location
+#       comment
+#     }
+#   }
+# }
+
+# query MyPeg($pegShortcode: String!) {
+#   peg(shortcode: $pegShortcode) {
+#     shortcode
+#     createPegCommentEvent(comment: "Hey there live demo!!!",email: "renato@renatomefi.com.br") {
+#       description
+#       email
+#       comment
+#     }
+#   }
+# }
+
+# query AllPegs {
+#   pegs {
+#     shortcode
+#   }
+# }
+
+# mutation NewPeg {
+#   createPeg {
+#     shortcode
+#     pegEvents {
+#       description
+#       comment
+#     }
+#   }
+# }
