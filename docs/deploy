@@ -1,0 +1,2 @@
+# http://talks.mefi.in/pegski-wecamp-2016
+aws --profile mefi --region="us-east-1" s3 sync ./ s3://talks.mefi.in/pegski-wecamp-2016 --exclude=./node_modules --delete
